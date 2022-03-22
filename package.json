@@ -49,6 +49,7 @@
     "electron-builder": "^22.14.13",
     "electron-is-dev": "^2.0.0",
     "mqtt": "^4.3.7",
+    "nodes7": "^0.3.16",
     "wait-on": "^6.0.1"
   }
 }

@@ -1,13 +1,143 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background: #1f1f1f;
+  color: white;
+  font-family: "Lato";
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.prg {
+  width: 80%;
+  height: 150px;
+  background-color: #5271c2;
+  perspective: 1000;
+  
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.prg h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card {
+  width: calc(100% * 0.3333 - 50px + 0.3333 * 50px);
+  height: 340px;
+  margin: 0 20px 20px 0;
+  perspective: 1000;
+
+}
+li .card__front {
+  background: #db6623;
+}
+li .card__num {
+  text-shadow: 1px 1px rgba(153, 71, 24, 0.8) , 2px 2px rgba(154, 71, 24, 0.802) , 3px 3px rgba(155, 72, 24, 0.804) , 4px 4px rgba(156, 72, 24, 0.806) , 5px 5px rgba(157, 73, 25, 0.808) , 6px 6px rgba(158, 73, 25, 0.81) , 7px 7px rgba(159, 74, 25, 0.812) , 8px 8px rgba(160, 74, 25, 0.814) , 9px 9px rgba(161, 75, 25, 0.816) , 10px 10px rgba(162, 75, 25, 0.818) , 11px 11px rgba(162, 75, 26, 0.82) , 12px 12px rgba(163, 76, 26, 0.822) , 13px 13px rgba(164, 76, 26, 0.824) , 14px 14px rgba(165, 77, 26, 0.826) , 15px 15px rgba(166, 77, 26, 0.828) , 16px 16px rgba(167, 77, 26, 0.83) , 17px 17px rgba(168, 78, 26, 0.832) , 18px 18px rgba(169, 78, 27, 0.834) , 19px 19px rgba(169, 79, 27, 0.836) , 20px 20px rgba(170, 79, 27, 0.838) , 21px 21px rgba(171, 79, 27, 0.84) , 22px 22px rgba(172, 80, 27, 0.842) , 23px 23px rgba(173, 80, 27, 0.844) , 24px 24px rgba(173, 81, 27, 0.846) , 25px 25px rgba(174, 81, 28, 0.848) , 26px 26px rgba(175, 81, 28, 0.85) , 27px 27px rgba(176, 82, 28, 0.852) , 28px 28px rgba(177, 82, 28, 0.854) , 29px 29px rgba(177, 82, 28, 0.856) , 30px 30px rgba(178, 83, 28, 0.858) , 31px 31px rgba(179, 83, 28, 0.86) , 32px 32px rgba(180, 83, 28, 0.862) , 33px 33px rgba(180, 84, 29, 0.864) , 34px 34px rgba(181, 84, 29, 0.866) , 35px 35px rgba(182, 85, 29, 0.868) , 36px 36px rgba(182, 85, 29, 0.87) , 37px 37px rgba(183, 85, 29, 0.872) , 38px 38px rgba(184, 86, 29, 0.874) , 39px 39px rgba(185, 86, 29, 0.876) , 40px 40px rgba(185, 86, 29, 0.878) , 41px 41px rgba(186, 87, 30, 0.88) , 42px 42px rgba(187, 87, 30, 0.882) , 43px 43px rgba(187, 87, 30, 0.884) , 44px 44px rgba(188, 87, 30, 0.886) , 45px 45px rgba(189, 88, 30, 0.888) , 46px 46px rgba(189, 88, 30, 0.89) , 47px 47px rgba(190, 88, 30, 0.892) , 48px 48px rgba(191, 89, 30, 0.894) , 49px 49px rgba(191, 89, 30, 0.896) , 50px 50px rgba(192, 89, 30, 0.898) , 51px 51px rgba(193, 90, 31, 0.9) , 52px 52px rgba(193, 90, 31, 0.902) , 53px 53px rgba(194, 90, 31, 0.904) , 54px 54px rgba(194, 90, 31, 0.906) , 55px 55px rgba(195, 91, 31, 0.908) , 56px 56px rgba(196, 91, 31, 0.91) , 57px 57px rgba(196, 91, 31, 0.912) , 58px 58px rgba(197, 92, 31, 0.914) , 59px 59px rgba(198, 92, 31, 0.916) , 60px 60px rgba(198, 92, 32, 0.918) , 61px 61px rgba(199, 92, 32, 0.92) , 62px 62px rgba(199, 93, 32, 0.922) , 63px 63px rgba(200, 93, 32, 0.924) , 64px 64px rgba(200, 93, 32, 0.926) , 65px 65px rgba(201, 94, 32, 0.928) , 66px 66px rgba(202, 94, 32, 0.93) , 67px 67px rgba(202, 94, 32, 0.932) , 68px 68px rgba(203, 94, 32, 0.934) , 69px 69px rgba(203, 95, 32, 0.936) , 70px 70px rgba(204, 95, 32, 0.938) , 71px 71px rgba(204, 95, 33, 0.94) , 72px 72px rgba(205, 95, 33, 0.942) , 73px 73px rgba(205, 96, 33, 0.944) , 74px 74px rgba(206, 96, 33, 0.946) , 75px 75px rgba(206, 96, 33, 0.948) , 76px 76px rgba(207, 96, 33, 0.95) , 77px 77px rgba(208, 97, 33, 0.952) , 78px 78px rgba(208, 97, 33, 0.954) , 79px 79px rgba(209, 97, 33, 0.956) , 80px 80px rgba(209, 97, 33, 0.958) , 81px 81px rgba(210, 98, 33, 0.96) , 82px 82px rgba(210, 98, 34, 0.962) , 83px 83px rgba(211, 98, 34, 0.964) , 84px 84px rgba(211, 98, 34, 0.966) , 85px 85px rgba(212, 99, 34, 0.968) , 86px 86px rgba(212, 99, 34, 0.97) , 87px 87px rgba(213, 99, 34, 0.972) , 88px 88px rgba(213, 99, 34, 0.974) , 89px 89px rgba(214, 99, 34, 0.976) , 90px 90px rgba(214, 100, 34, 0.978) , 91px 91px rgba(214, 100, 34, 0.98) , 92px 92px rgba(215, 100, 34, 0.982) , 93px 93px rgba(215, 100, 34, 0.984) , 94px 94px rgba(216, 101, 34, 0.986) , 95px 95px rgba(216, 101, 35, 0.988) , 96px 96px rgba(217, 101, 35, 0.99) , 97px 97px rgba(217, 101, 35, 0.992) , 98px 98px rgba(218, 101, 35, 0.994) , 99px 99px rgba(218, 102, 35, 0.996) , 100px 100px rgba(219, 102, 35, 0.998);
+}
+.card__flipper {
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card__front, .card__back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+}
+.card__front {
+  transform: rotateY(0);
+  z-index: 2;
+  overflow: hidden;
+}
+.card__back {
+  transform: rotateY(180deg) scale(1.1);
+  background: #141414;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.card__back span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__name {
+  font-size: 32px;
+  line-height: 0.9;
+  font-weight: 700;
+}
+.card__name span {
+  font-size: 14px;
+}
+.card__num {
+  font-size: 100px;
+  margin: 0 8px 0 0;
+  font-weight: 700;
+}
+@media (max-width: 700px) {
+  .card__num {
+    font-size: 70px;
+  }
+}
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+    height: 290px;
+    margin-right: 0;
+    float: none;
+  }
+  .card .card__front,
+.card .card__back {
+    height: 290px;
+  }
+}
+
+/* Demo */
+main {
+  text-align: center;
+}
+main h1,
+main p {
+  margin: 0 0 12px 0;
+}
+main h1 {
+  margin-top: 12px;
+  font-weight: 300;
+}
+
+.fa-twitter {
+  color: white;
+  font-size: 30px;
 }
